@@ -37,6 +37,8 @@ public function show($slug){
         'Comment 3',
 
     ];
+
+    dump($slug,$this);
     return new Response(
         $this->render('article/show.html.twig',[
             'title'=>ucwords(str_replace('-',' ',$slug)),
